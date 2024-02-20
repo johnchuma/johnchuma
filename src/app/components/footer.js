@@ -6,7 +6,7 @@ const Footer = () => {
         <Experience/>
         <div className="grid grid-cols-1 md:grid-cols-12  w-11/12 space-y-3 text-center md:text-start justify-center md:justify-start md:w-11/12 mx-auto">
             <div className="col-span-8">
-                <div className="flex flex-col md:flex-col items-center space-x-2 space-y-2">
+                <div className="flex flex-col md:flex-row items-center md:items-start space-x-2 space-y-2">
                 <Image src={"/me.jpg"} height={1000} width={1000} className="aspect-squire rounded-full h-20 w-20 md:h-10 md:w-10 object-cover" alt="John Vedastus Chuma"/>
                 <h1 className=" md:text-lg md:block hidden">John Chuma</h1>
                 </div>
