@@ -1,0 +1,1 @@
+export const categories = ["Web3","Blockchain","Apps","Websites","Development","Technology"];
