@@ -9,7 +9,7 @@ const Header = () => {
   const mailtoLink = `https://mail.google.com/mail/?view=cm&fs=1&to=${emailAddress}&su=${subject}&body=${body}`;
     return ( <div className="bg-white w-full">
 <div className="bg-indigo-700 flex justify-center py-5">
-   <p className="text-white text-base ">Let me code your project for 50% discount today; <span className=" text-pink-300 underline">Call: +255 627 707 434 </span></p>
+   <p className="text-white text-base text-center ">Let me code your project for 50% discount today; <span className=" text-pink-300 underline">Call: +255 627 707 434 </span></p>
 </div>
 <div className="flex justify-between w-11/12 md:w-11/12 mx-auto  py-5 ">
 <div className="flex space-x-4 items-center ">
