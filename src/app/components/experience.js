@@ -1,14 +1,14 @@
 const Experience = () => {
     return ( <div>
-            <div className="bg-indigo-700 w-11/12 mx-auto  py-24 my-12 rounded-xl">
-                <div className="grid grid-cols-12 ">
-                    <div className="col-span-4 px-24">
-                      <h1 className="text-7xl font-bold">
+            <div className="bg-indigo-700 w-11/12 mx-auto  py-24 my-12 rounded-xl md:text-start text-center">
+                <div className="grid grid-cols-1 md:grid-cols-12 gap-y-8 ">
+                    <div className=" col-span-12 md:col-span-4 md:px-24">
+                      <h1 className=" text-3xl md:text-7xl font-bold">
                         Here is my work experience
                       </h1>
-                      <p className="text-lg mt-5"> I have experience of 4+ years</p>
+                      <p className="text-lg mt-5 md:block hidden"> I have experience of 4+ years</p>
                     </div>
-                    <div className="col-span-8 px-24">
+                    <div className="col-span-12 md:col-span-8  md:px-24">
                     {[
        
        {title:"Shule Yetu",subtitle:"Full stack developer (MERN stack)",
@@ -28,7 +28,7 @@ const Experience = () => {
        description:"My role was develpment and maintainance of company e-commerce website"
        },
      ].map((item,index)=>{
-         return  <div className="mb-4 border-b border-b-white p-4" key={index}>
+         return  <div className=" md:mb-4 md:border-b md:border-b-white p-4" key={index}>
          <div className="flex flex-col md:flex-row justify-between pb-2">
            <div>
            <h1 className="font-bold text-lg">{item.title}</h1>

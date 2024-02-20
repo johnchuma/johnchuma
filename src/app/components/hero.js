@@ -4,14 +4,17 @@ const HeroSection = () => {
     const body = 'Your message here ....';
     const mailtoLink = `https://mail.google.com/mail/?view=cm&fs=1&to=${emailAddress}&su=${subject}&body=${body}`;
     return ( <div className="bg-pink-50 bg-opacity-30 ">
-         <div className=" w-11/12 md:w-8/12 mx-auto  py-36 ">
-      <div className="text-7xl text-center font-bold  ">
-        Websites and mobile app developer, with interest in decentralized applications
+         <div className=" w-12/12 px-4  md:w-8/12 mx-auto  py-36 ">
+      <div className=" text-5xl md:text-7xl text-center font-bold  ">
+        Websites and mobile app developer, interested in decentralized applications
         </div>
-        <p className="text-center py-10 text-lg w-9/12 mx-auto ">
+        <p className="text-center py-10 text-lg w-9/12 mx-auto hidden md:block ">
         Hello, <span className="bg-pink-200 opacity-100">I'm John Vedastus Chuma</span> – your dedicated Full stack Developer. I'm driven by a profound passion for crafting inventive 
         decentralized applications and delving into the boundless possibilities of blockchain technology. 
         I bring a keen eye for cutting-edge solutions to revolutionize the digital landscape. 
+        </p>
+        <p className="text-center py-10 text-lg w-11/12 mx-auto block md:hidden ">
+        Hello, <span className=" opacity-100">I'm John Vedastus Chuma.</span> 
         </p>
         <div className="flex space-x-4 justify-center">
         <a href="https://github.com/johnchuma" target="__blank" className="py-4 px-8 border cursor-pointer border-black rounded-lg hover:border-indigo-700 transition-all flex space-x-2">
