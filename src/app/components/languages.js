@@ -9,8 +9,8 @@ const Languages = () => {
          </div>
         <marquee>
          <div className="flex overflow-hidden space-x-24">
-         {["next.png","node.png","tailwind.png","solidity.png",'express.png',"react.png"].map((item)=>{
-            return <Image height={500} width={500} className=" h-16 w-auto" src={"/"+item}/>
+         {["next.png","node.png","tailwind.png","solidity.png",'express.png',"react.png"].map((item,key)=>{
+            return <Image key={key} height={500} width={500} className=" h-16 w-auto" src={"/"+item}/>
         })}
          </div>
         </marquee>
