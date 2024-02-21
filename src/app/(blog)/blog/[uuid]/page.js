@@ -18,7 +18,7 @@ const Page = ({params}) => {
          <div className="h-32 w-32 border-2 rounded-full border-l-0 border-b-0 animate-spin border-slate-950 "></div>
         </div>:
         <div className=" mx-auto py-12">
-        <div className="flex justify-between w-11/12 md:w-9/12 mx-auto mb-12">
+        <div className="flex justify-between w-11/12 md:w-11/12 mx-auto mb-12">
                 <h1 className="line-clamp-1">5 min read</h1>
                 <div className="flex space-x-1">
                     <Link href={"/blog"}  className=" text-indigo-600" >Posts</Link>

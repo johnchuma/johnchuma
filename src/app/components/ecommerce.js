@@ -4,13 +4,13 @@ import Link from "next/link";
 import ProjectList from "./project_list"
 const Ecommerce= () => {
     return ( <div>
-       <div className="bg-pink-50 py-24 md:text-start text-center  ">
+       <div id="ecommerce" className="bg-pink-50 py-24 md:text-start text-center  ">
         <div className="grid gap-y-4 grid-cols-1 md:grid-cols-2 gap-x-12 w-11/12 mx-auto items-center justify-center">
        
             <Image width={3000} height={3000} src={"/server.avif" }/>
         
         <div>
-           <h1 className="text-3xl md:text-4xl  font-bold">Ecommerce projects</h1>
+           <h1  className="text-3xl md:text-4xl  font-bold">Ecommerce projects</h1>
            <h1 className="text-lg mt-3 md:pe-32">I have 4+ Ecommerce projects projects that i have successfully developed and deployed </h1>
            <div className="text-sm flex flex-wrap justify-center md:justify-start mt-10 ">
             <ProjectList category={"Ecommerce"}/>

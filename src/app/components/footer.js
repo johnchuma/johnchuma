@@ -1,7 +1,10 @@
+"use client"
 import Image from "next/image";
 import Experience from "./experience"
+import toast, { Toaster } from "react-hot-toast";
 const Footer = () => {
     return ( <div>
+         <Toaster />
         <div className="w-full bg-slate-950 py-20 text-white">
         <Experience/>
         <div className="grid grid-cols-1 md:grid-cols-12 items-center   w-11/12 space-y-3 text-center md:text-start justify-center md:justify-start md:w-11/12 mx-auto">
@@ -11,9 +14,14 @@ const Footer = () => {
                 <h1 className=" md:text-lg md:block hidden">John Chuma</h1>
                 </div>
                 <p className="text-lg py-4">Subscribe to receive blog updates</p>
-                <div className=" grid grid-cols-12 justify-between  items-center bg-white  rounded-lg md:w-4/12">
+                <form onSubmit={(e)=>{
+                        e.preventDefault();
+                        toast.success("Subscribed successfully")
+                        e.target.email.value = null;
+                }}>
+                <div className=" grid grid-cols-12 justify-between  items-center  rounded-lg md:w-4/12">
                     <div className="col-span-8">
-                    <input placeholder="Write your email here..." className=" py-4 border-0  rounded-s-lg "/>
+                    <input name="email" placeholder="Write your email here..." className=" text-black py-4 border-0  rounded-s-lg "/>
                     </div>
                     <div className="col-span-4">
                     <button className="bg-indigo-700 py-5 w-full px-3 text-sm rounded-e-lg">Subscribe</button>
@@ -21,6 +29,8 @@ const Footer = () => {
 
                     
                 </div>
+                </form>
+                
                 <p className="text-xs md:text-sm mt-4 opacity-80">By subscribing you agree to with our Privacy Policy and provide consent to receive updates from our this website</p>
             </div>
             <div className=" col-span-12 md:col-span-2">

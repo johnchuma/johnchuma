@@ -1,13 +1,17 @@
 import {projects} from "../../utils/projects"
 import Link from "next/link";
 import Image from "next/image"
+import { useRouter } from "next/navigation";
 const Page = ({params}) => {
     const project = projects[params.uuid]
-    return ( <div className="  mx-auto w-11/12 md:w-9/12 py-24">
+    const router = useRouter()
+    return ( <div className="  mx-auto w-11/12 md:w-11/12 py-24">
              <div className="flex justify-between">
-                <h1 className="text-lg font-bold line-clamp-1">Project</h1>
-                <div className="flex space-x-1">
-                    <Link href={"/"}  className=" text-indigo-600" >Home </Link>
+                <h1 className="text-xl font-bold line-clamp-1">{project.title}</h1>
+                <div className="flex space-x-1 text-base">
+                    <div onClick={()=>{
+                      router.back()
+                    }}  className="cursor-pointer text-indigo-600" >Home </div>
                     <p className=" line-clamp-1">/ {project.title}</p>
                 </div>
              </div>
@@ -23,10 +27,10 @@ const Page = ({params}) => {
               return <div key={index}  className={`bg-indigo-100 rounded-full px-3 py-2 text-sm mb-2`}>{item}</div>
             })}
           </div>
-          <p>{project.description}</p>
+          <p className="text-base">{project.description}</p>
           <div className="mt-12">
-          <a href={project.link} target="__blank"  className="bg-indigo-600 cursor-pointer  hover:bg-slate-950 transition-all
-         text-white py-3 mt-12 px-4">Open project</a>
+          <a href={project.link} target="__blank"  className="bg-indigo-700 rounded-lg text-sm cursor-pointer hover:bg-slate-950 transition-all
+         text-white py-4 px-8">Open project</a>
           </div>
         </div>
                 </div>

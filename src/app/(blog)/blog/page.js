@@ -20,11 +20,11 @@ const Page = () => {
             setTotalPages(body.totalPages)
         })
     },[page])
-    return ( <div className="w-11/12 md:w-9/12 mx-auto py-24">
+    return ( <div className="w-11/12 md:w-11/12 mx-auto py-24">
         {/* <div className="text-indigo-600 font-bold text-2xl py-12 border-b-[2px] brder-slate-200 text-center ">Blog</div> */}
         {
             blogs.length <1 ? <div className="flex justify-center items-center flex-col py-32">
-                     <div className="h-32 w-32 border-2 rounded-full border-l-0 border-b-0 animate-spin border-slate-950 "></div>
+                     <div className="h-12 w-12 border-2 rounded-full border-l-0 border-b-0 animate-spin border-slate-950 "></div>
         </div>:<div  >
             <div className="grid grid-cols-1 md:grid-cols-12 gap-12">
                 <div className=" col-span-8 space-y-8">
@@ -40,6 +40,7 @@ const Page = () => {
                     <div className=" col-span-5 md:col-span-4">
                         <Image height={2000} width={2000} className="w-full aspect-square md:aspect-video object-cover" src={item.image}/>
                     </div>
+
 
 
                 </Link>

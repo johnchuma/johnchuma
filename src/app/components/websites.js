@@ -5,7 +5,7 @@ import ProjectList from "./project_list";
 const Websites = () => {
     return ( <div>
         <div className="bg-indigo-50 py-24 md:text-start text-center">
-        <div className="grid grid-cols-1 gap-y-2 md:grid-cols-2 gap-x-12 w-11/12 mx-auto items-center justify-center">
+        <div id="websites" className="grid grid-cols-1 gap-y-2 md:grid-cols-2 gap-x-12 w-11/12 mx-auto items-center justify-center">
        
             <Image width={3000} height={3000} src={"/server.avif" }/>
         
