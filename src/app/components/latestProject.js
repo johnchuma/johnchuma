@@ -1,4 +1,7 @@
+
+
 const LatestProject = () => {
+ 
     return ( 
         <div>
         <div className="bg-indigo-700 py-24">
@@ -8,7 +11,9 @@ const LatestProject = () => {
       <p className="text-lg w-11/12 mx-auto md:mx-0 md:me-auto md:w-10/12 text-gray-100  mt-5">ChuoApp (A platform for students to learn from mentors through joining communities)</p>
 
       </div>
-      <div className="text-white text-lg mt-0 md:mt-5 bg-black py-4 px-24 h-20 rounded-lg cursor-pointer flex justify-center items-center">Open project</div>
+      <div onClick={()=>{
+        window.open("https://play.google.com/store/apps/details?id=com.johnchuma.chuoapplication&hl=en&gl=US","_blank")
+      }} className="text-white text-lg mt-0 md:mt-5 bg-black py-4 px-24 h-20 rounded-lg cursor-pointer flex justify-center items-center">Open project</div>
         </div>
       
     </div>
