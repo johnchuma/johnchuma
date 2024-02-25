@@ -4,7 +4,7 @@ const HeroSection = () => {
     const body = 'Your message here ....';
     const mailtoLink = `https://mail.google.com/mail/?view=cm&fs=1&to=${emailAddress}&su=${subject}&body=${body}`;
     return ( <div className="bg-pink-50 bg-opacity-30 ">
-         <div className=" w-12/12 px-4  md:w-8/12 mx-auto  py-36 ">
+         <div className=" w-12/12 px-4 xl:w-10/12 2xl:w-8/12  mx-auto  py-36 ">
       <div className=" text-5xl md:text-7xl text-center font-bold  ">
         Websites and mobile app developer, interested in decentralized applications
         </div>
