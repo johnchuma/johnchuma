@@ -29,7 +29,7 @@ const Page = ({params}) => {
           </div>
           <p className="text-base">{project.description}</p>
           <div className="mt-12">
-          <a href={project.link} target="__blank"  className="bg-indigo-700 rounded-lg text-sm cursor-pointer hover:bg-slate-950 transition-all
+          <a href={project.link} target="__blank"  className="bg-indigo-700 rounded text-sm cursor-pointer hover:bg-slate-950 transition-all
          text-white py-4 px-8">Open project</a>
           </div>
         </div>

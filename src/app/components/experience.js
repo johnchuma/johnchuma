@@ -1,6 +1,6 @@
 const Experience = () => {
     return ( <div>
-            <div className="bg-indigo-700 w-11/12 mx-auto  py-24 my-12 rounded-xl md:text-start text-center">
+            <div className="bg-primary w-11/12 mx-auto  py-24 my-12 rounded-xl md:text-start text-center">
                 <div className="grid grid-cols-1 md:grid-cols-12 gap-y-8 ">
                     <div className=" col-span-12 md:col-span-4 md:px-24">
                       <h1 className=" text-3xl md:text-7xl font-bold">

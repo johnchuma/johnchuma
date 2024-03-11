@@ -2,15 +2,14 @@ import Image from "next/image"
 const Languages = () => {
     return ( <div className="">
         <div className="py-14">
-        <div className=" flex flex-col text-center w-11/12 md:w-4/12 mx-auto mb-8 ">
-            <h1 className="text-xl md:text-2xl">AFTER FOUR YEARS OF CODING</h1>
-            <h1 className="bg-pink-400 text-xl md:text-2xl font-bold  ">I HAVE MASTERED THESE TECH</h1>
+        <div className=" flex flex-col text-center w-12/12  pl-5   md:w-4/12 ms-auto mb-8 ">
+           <Image height={1000} width={1000} className="object-cover rounded"  src={'/ecommerce.png'} />
 
          </div>
-        <marquee>
-         <div className="flex overflow-hidden space-x-24">
-         {["next.png","node.png","tailwind.png","solidity.png",'express.png',"react.png"].map((item,key)=>{
-            return <Image key={key} height={500} width={500} className=" h-12 md:h-16 w-auto" src={"/"+item}/>
+        <marquee >
+         <div className="flex  space-x-4">
+         {["Next.Js","React.Js","Tailwind CSS","Flutter",'Node JS',"Express","Mysql","Firebase"].map((item,key)=>{
+            return <h1 key={key} className="text-white font-extrabold text-xl">{item}</h1>
         })}
          </div>
         </marquee>

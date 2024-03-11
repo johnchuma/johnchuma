@@ -4,19 +4,20 @@ const LatestProject = () => {
  
     return ( 
         <div>
-        <div className="bg-indigo-700 py-24">
-        <div className="flex space-y-10 md:flex-row flex-col text-center items-center md:text-start md:items-start w-11/12 mx-auto justify-between">
-        <div>
-      <h1 className=" text-3xl md:text-5xl font-bold text-white">My Latest project</h1>
-      <p className="text-lg w-11/12 mx-auto md:mx-0 md:me-auto md:w-10/12 text-gray-100  mt-5">ChuoApp (A platform for students to learn from mentors through joining communities)</p>
-
-      </div>
-      <div onClick={()=>{
-        window.open("https://play.google.com/store/apps/details?id=com.johnchuma.chuoapplication&hl=en&gl=US","_blank")
-      }} className="text-white text-lg mt-0 md:mt-5 bg-black py-4 px-24 h-20 rounded-lg cursor-pointer flex justify-center items-center">Open project</div>
+           <div className=" w-12/12 px-5  md:w-8/12 mx-auto  py-0 mt-10 ">
+      <div className=" text-4xl text-white md:text-7xl text-start font-bold">
+        Explore all of my previous projects
         </div>
-      
-    </div>
+        <p className="text-start pt-7 text-white text-base ">
+         I have an experiance of doing small projects and big projects, explore my projects below from my previous statisfied clients
+        </p>
+        
+        <div className="flex mt-8 ">
+          <a  target="__blank"  className="bg-primary font-bold rounded text-sm
+           cursor-pointer hover:bg-slate-950 transition-all
+         text-white py-4 px-8">Open latest project</a>
+        </div>
+      </div>
       <div className="w-full h-[2px] bg-black"></div>
 
         </div>
