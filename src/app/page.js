@@ -31,7 +31,7 @@ export default function Home() {
       
      <HeroSection/>
      <Languages/>
-     <Price/>
+     {/* <Price/> */}
      <LatestProject/>
      <Websites/>
      {/* <Apps/> */}
